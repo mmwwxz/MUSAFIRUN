@@ -1,0 +1,36 @@
+.tourists{
+  max-width: 1440px;
+  width: 100%;
+}
+
+.tourists_text{
+  margin-bottom: 95px;
+  margin-top: 127px;
+
+  h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  &::after{
+    content: "";
+    display: block;
+    width: 170px;
+    border-bottom: 4px solid #EFB809;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.tourists_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.images{
+}
+
+.long_image{
+}

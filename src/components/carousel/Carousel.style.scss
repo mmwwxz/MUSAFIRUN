@@ -1,0 +1,59 @@
+.carousel{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #09E97B;
+
+  button{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: #006400;
+    border: #006400 solid 6px;
+    font-size: 35px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background: transparent;
+  }
+}
+
+.cards{
+  display: flex;
+  column-gap: 50px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #006400;
+  width: 323px;
+  height: 433px;
+  border-radius: 15px;
+  justify-content: space-around;
+  padding: 15px 21px 31px 21px;
+
+  h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  p{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #DFDFDFB2;
+    border: none;
+    background: transparent;
+  }
+}

@@ -1,0 +1,58 @@
+.AboutUs{
+  height: 310.91px;
+  max-width: 1236px !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs_text{
+  margin-bottom: 95px;
+  margin-top: 127px;
+
+  h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 45px;
+  }
+
+  &::after{
+    content: "";
+    display: block;
+    width: 170px;
+    border-bottom: 4px solid #EFB809;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.aboutUs_wrapper{
+  display: flex;
+  justify-content: space-around;
+  column-gap: 96px;
+}
+
+.aboutUs_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 10px;
+  width: 230px;
+  height: 100%;
+
+  .aboutUs_icon{
+    width: 60px;
+    height: 60px;
+  }
+
+  p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+    flex-grow: 1;
+  }
+}
