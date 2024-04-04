@@ -1,3 +1,3 @@
-const tourDetailsURL = (id = ':id') => `/tours/${id}`;
+export const tourDetailsURL = (id = ':id') => `/tours/${id}`;
 
-export default tourDetailsURL;
+export const tourIntDetailsURL = (id = ':id') => `/internal-tour-details/${id}`;

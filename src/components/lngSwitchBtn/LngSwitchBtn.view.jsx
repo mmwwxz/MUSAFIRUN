@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './LngSwitchBtn.style.scss';
 
-const LanguageSwitchButton = () => {
-    const [isRussian, setIsRussian] = useState(true);
 
-    const toggleLanguage = () => {
-        setIsRussian(prevState => !prevState);
-    };
+const LanguageSwitchButton = () => {
 
     return (
         <div className="language-switch">
             <label className="switch">
-                <input type="checkbox" checked={isRussian} onChange={toggleLanguage} />
-                <div className="slider round"><div className="ru">RU</div> <div className='en'>EN</div></div>
+                <input type="checkbox"/>
+                <div className="slider round">
+                    <div className="ru">RU</div>
+                    <div className="en">EN</div>
+                </div>
             </label>
         </div>
     );

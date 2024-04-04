@@ -7,6 +7,8 @@
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 700;
+
+
   }
 
   &::after{
@@ -21,6 +23,7 @@
 .tours_cities{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 45px;
 
@@ -33,11 +36,31 @@
     border: 0.82px solid #00AF59;
     background: transparent;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    transition: background-color 0.9s, transform 0.8s, box-shadow 0.4s;
 
     &:active {
       background-color: #00AF59;
       color: #fff;
+      transition: background-color 0.1s;
+      transform: translateY(2px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .btn{
+    font-family: "Inter", sans-serif;
+    width: 200.6px;
+    height: 50.79px;
+    padding: 15.21px 36.48px 15.57px 36.12px;
+    border-radius: 89.37px;
+    border: 0.82px solid #00AF59;
+    background-color: #00b057;
+    cursor: pointer;
+    transition: background-color 0.9s, transform 0.8s, box-shadow 0.4s;
+
+    &:active {
+      background-color: #FFFFFF;
+      color: #008d43;
       transition: background-color 0.1s;
       transform: translateY(2px);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
@@ -67,7 +90,7 @@
 
 
 .tours__title_int{
-  padding-bottom: 0;
+  margin-bottom: -120px;
   margin-top: 70px;
   text-align: center;
 
@@ -90,3 +113,61 @@
   margin-top: 50px;
   transform: rotate(180deg) translateY(-4px);
 }
+
+@media (max-width: 768px) {
+  // Adjust styles for smaller screens here
+  .tours_title {
+    margin-top: 120px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    &::after {
+      width: 100px;
+    }
+  }
+
+  .tours_cities {
+    flex-direction: column;
+
+    button {
+      width: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  .tour_cards {
+  }
+
+  .tour__cards_int {
+    //height: auto;
+    width: 100%;
+    margin-bottom: 1100px;
+  }
+
+  .tour__cards_int-box {
+    padding: 16px;
+    width: 100%;
+  }
+
+  .tours__title_int {
+    margin-bottom: -60px;
+    margin-top: 40px;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    &::after {
+      width: 100px;
+    }
+  }
+
+  .rotate {
+    margin-top: 30px;
+  }
+}
+

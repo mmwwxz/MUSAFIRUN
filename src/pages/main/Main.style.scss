@@ -1,48 +1,80 @@
-.about_img{
-  position: relative;
-  overflow: hidden;
-  &__img{
-    width: 1920px;
-    height: 100vh;
+.about{
+  .about_img{
+    position: relative;
+    overflow: hidden;
+    &__img{
+      width: 1920px;
+      height: 100vh;
+    }
+
+    @media (max-width: 768px) {
+      height: 90vh;
+    }
+    @media (max-width: 500px) {
+      height: 70vh;
+      font-size: 54px;
+    }
+  }
+
+  .about_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      top: 45%;
+    }
+    @media (max-width: 500px) {
+      top: 40%;
+    }
+
+    h1{
+      font-family: 'Poppins', sans-serif;
+      font-size: 96px;
+      font-weight: 600;
+      color: #fff;
+
+      @media (max-width: 768px) {
+        font-size: 74px;
+      }
+      @media (max-width: 500px) {
+        font-size: 54px;
+      }
+    }
+
+    h2{
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        font-size: 35px;
+      }
+      @media (max-width: 500px) {
+        font-size: 28px;
+      }
+    }
+
+    button{
+      background: transparent;
+      border: #00FF47 1px solid;
+      color: #fff;
+      border-radius: 15px;
+      width: 267px;
+      height: 59px;
+      font-weight: bolder;
+      cursor: pointer;
+    }
   }
 }
 
-.about_text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% ,-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-  h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 96px;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  h2{
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 0em;
-    color: #fff;
-    margin-bottom: 30px;
-  }
-
-  button{
-    background: transparent;
-    border: #00FF47 1px solid;
-    color: #fff;
-    border-radius: 15px;
-    width: 267px;
-    height: 59px;
-    font-weight: bolder;
-    cursor: pointer;
-  }
-}
 
 .rotate{
   margin-top: 155px;

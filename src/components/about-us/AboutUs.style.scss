@@ -6,17 +6,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .aboutUs_text{
   margin-bottom: 95px;
   margin-top: 127px;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
   h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-align: center;
     font-size: 45px;
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
   }
 
   &::after{
@@ -32,6 +44,11 @@
   display: flex;
   justify-content: space-around;
   column-gap: 96px;
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .aboutUs_card{

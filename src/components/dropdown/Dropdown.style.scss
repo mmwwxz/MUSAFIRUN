@@ -3,7 +3,8 @@
 }
 
 .dropdown-box {
-  width: 720px;
+  max-width: 720px;
+  width: 100%;
   padding: 25px 30.82px 25px 40px;
   border-radius: 20px;
   background: #00AF59;
@@ -12,13 +13,18 @@
 .dropdown-icon {
   width: 30px;
   height: 30px;
-  transition: transform 0.3s; /* Apply transition for rotation */
+  transition: transform 0.3s;
+
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .dropdown-button {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Center align the content vertically */
+  align-items: center;
   font-family: 'Inter', sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -29,6 +35,13 @@
   width: 650px;
   background: transparent;
   z-index: 100;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    gap: 20px;
+    max-width: 650px;
+    width: 100%;
+  }
 }
 
 .dropdown-content {

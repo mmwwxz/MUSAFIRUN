@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import header from "../../assets/header.png";
 import './Main.style.scss'
 import AboutUsView from "../../components/about-us/AboutUs.view.jsx";
@@ -10,18 +10,31 @@ import TouristsView from "../../components/tourists/Tourists.view.jsx";
 import ReviewsView from "../../components/reviews/Reviews.view.jsx";
 import reviews from "../../components/reviews/ReviewsData.js"
 import FooterView from "../../layout/footer/Footer.view.jsx";
+import ModalWinView from "../../components/modalWin/ModalWin.view.jsx";
 
 const MainView = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <>
-            <div style={{minHeight: '864px'}}>
+            <div className="about">
+                <ModalWinView isOpen={isModalOpen} onClose={closeModal} />
+
                 <div className="about_img">
                     <img className="about_img__img" src={header} alt="something gone wrong..."/>
                 </div>
                 <div className="about_text">
                     <h1>MUSAFIRUN</h1>
                     <h2>Путешествуй с нами ! </h2>
-                    <button>Подробнее</button>
+                    <button onClick={openModal}>Подробнее</button>
                 </div>
             </div>
 
@@ -31,10 +44,10 @@ const MainView = () => {
             <div>
                 <PopularDestinations/>
             </div>
-            <div>
-                <img src={GreenSvg} alt="" className="rotate"/>
+            <div style={{width: '100%'}}>
+                <img style={{width: '100%'}} src={GreenSvg} alt="" className="rotate"/>
                 <HotDeals/>
-                <img src={GreenSvg} alt=""/>
+                <img style={{width: '100%'}} src={GreenSvg} alt=""/>
             </div>
             <div>
                 <DeliveryView/>
@@ -42,10 +55,10 @@ const MainView = () => {
             <div>
                 <TouristsView/>
             </div>
-            <div>
-                <img src={GreenSvg} alt="" className="rotate"/>
+            <div style={{width: '100%'}}>
+                <img style={{width: '100%'}} src={GreenSvg} alt="" className="rotate"/>
                 <ReviewsView data={reviews}/>
-                <img src={GreenSvg} alt=""/>
+                <img style={{width: '100%'}} src={GreenSvg} alt=""/>
             </div>
             <div>
                 <FooterView/>

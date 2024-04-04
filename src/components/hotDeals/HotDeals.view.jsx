@@ -1,17 +1,33 @@
-import React from "react";
+import React, {useState} from "react";
 import './HotDeals.style.scss';
 import Dubay from "../../assets/dubay.png";
 import Stambul from "../../assets/stambul-card.png";
-
+import Kaz from "../../assets/Kazahstan.webp";
+import Oae from "../../assets/OAE.jpg";
+import {Link} from "react-router-dom";
+import {TOURS_PAGE} from "../../utils/path.js";
+import ModalWinView from "../modalWin/ModalWin.view.jsx";
 
 const HotDeals = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <div className="deals">
+            <ModalWinView isOpen={isModalOpen} onClose={closeModal} />
+
             <div className="deals_title">
                 <h2>Горящие туры</h2>
             </div>
-            <div style={{display: 'flex', justifyContent: 'center', gap: '80px'}}>
-                <div className="deals_wrapper">
+            <div className="deals_box">
+                <div className="deals_box__wrapper">
                     <div className="deals_card">
                         <img className="deals_img" src={Dubay} alt="something gone wrong..."/>
                         <h4 className="deals_subtitle">
@@ -29,12 +45,12 @@ const HotDeals = () => {
                             - Сопровождающий турлидер ; <br/>
                             - Бонусы компании
                         </div>
-                        <button className="deals_button">
+                        <button onClick={openModal} className="deals_button">
                             Подробнее
                         </button>
                     </div>
                     <div className="deals_card">
-                        <img className="deals_img" src={Dubay} alt="something gone wrong..."/>
+                        <img className="deals_img" src={Oae} alt="something gone wrong..."/>
                         <h4 className="deals_subtitle">
                             Тур в Дубай
                         </h4>
@@ -50,12 +66,12 @@ const HotDeals = () => {
                             - Сопровождающий турлидер ; <br/>
                             - Бонусы компании
                         </div>
-                        <button className="deals_button">
+                        <button onClick={openModal} className="deals_button">
                             Подробнее
                         </button>
                     </div>
                 </div>
-                <div className="deals_wrapper">
+                <div className="deals_box__wrapper">
                     <div className="deals_card">
                         <img className="deals_img" src={Stambul} alt="something gone wrong..."/>
                         <h4 className="deals_subtitle">
@@ -73,12 +89,12 @@ const HotDeals = () => {
                             - Переезды по программе; <br/>
                             - Медицинская страховка ;
                         </div>
-                        <button className="deals_button">
+                        <button onClick={openModal} className="deals_button">
                             Подробнее
                         </button>
                     </div>
                     <div className="deals_card">
-                        <img className="deals_img" src={Stambul} alt="something gone wrong..."/>
+                        <img className="deals_img" src={Kaz} alt="something gone wrong..."/>
                         <h4 className="deals_subtitle">
                             Наследие Турции «Стамбул 2н. – Анталия 5н.»
                         </h4>
@@ -94,15 +110,17 @@ const HotDeals = () => {
                             - Переезды по программе; <br/>
                             - Медицинская страховка ;
                         </div>
-                        <button className="deals_button">
+                        <button onClick={openModal} className="deals_button">
                             Подробнее
                         </button>
                     </div>
                 </div>
             </div>
-            <button className="tours_btn">
-                Все туры
-            </button>
+            <Link to={TOURS_PAGE}>
+                <button className="tours_btn">
+                    Все туры
+                </button>
+            </Link>
         </div>
     );
 };

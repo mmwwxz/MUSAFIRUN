@@ -1,24 +1,19 @@
-.video-background {
+.video-background_phone {
   position: relative;
-  width: 2000px;
-  height: 620px;
   background-color: #09E97B;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 150px;
 
-  .player-container {
+  .player-container_phone {
     position: absolute;
-    width: 1000px;
-    height: 575px;
-    border-radius: 50px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); // Добавление тени
     z-index: 4;
   }
 
-  .frame {
+  .frame_phone {
     position: absolute;
     left: 0;
     bottom: -152px;
@@ -26,7 +21,7 @@
     z-index: 2;
   }
 
-  .frameRotate {
+  .frameRotate_phone {
     position: absolute;
     left: 0;
     top: -182px;

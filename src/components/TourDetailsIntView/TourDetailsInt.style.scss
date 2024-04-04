@@ -316,12 +316,12 @@
       width: 390px;
       margin-bottom: 132px;
 
-        @media (max-width: 768px) {
-          font-size: 18px;
-          padding: 0 10px;
-          margin-bottom: 52px;
-        }
+      @media (max-width: 768px) {
+        font-size: 18px;
+        padding: 0 10px;
+        margin-bottom: 52px;
       }
+    }
   }
 
   &__important-info {

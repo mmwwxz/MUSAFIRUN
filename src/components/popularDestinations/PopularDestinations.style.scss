@@ -5,17 +5,32 @@
 .destination_wrapper{
   display: flex;
   gap: 20px;
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .destination_title{
   margin-top: 148px;
   padding-bottom: 42px;
 
+  @media (max-width: 1024px) {
+    margin-top: 60px;
+    padding-bottom: 32px;
+  }
+
+
   h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-align: center;
     font-size: 45px;
+
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
   }
 
   &::after{
@@ -40,6 +55,7 @@
 }
 
 .destination_img{
+  height: 260px;
 }
 
 .destination_subtitle{

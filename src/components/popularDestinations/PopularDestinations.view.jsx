@@ -1,8 +1,10 @@
 import React from "react";
 import './PopularDestinations.style.scss';
-import alamata_card from '../../assets/alamata-card-1.png';
-import efes_card from '../../assets/efes-card.png';
-import tashkent_card from '../../assets/tashkent-card.png';
+import Uzb from "../../assets/Uzbekistan.png";
+import Kaz from "../../assets/Kazahstan.webp";
+import Oae from "../../assets/OAE.jpg";
+import {Link} from "react-router-dom";
+import {TOURS_PAGE} from "../../utils/path.js";
 
 
 const PopularDestinations = () => {
@@ -13,9 +15,9 @@ const PopularDestinations = () => {
             </div>
             <div className="destination_wrapper">
                 <div className="destination_card">
-                    <img className="destination_img" src={alamata_card} alt="something gone wrong..."/>
+                    <img className="destination_img" src={Kaz} alt="something gone wrong..."/>
                     <h4 className="destination_subtitle">
-                        Однодневный тyp в Алматы
+                        Этот 7-дневный в Алматы
                     </h4>
                     <p className="destination_text">Маршрут тура: Бишкек - Алматы - Бишкек</p>
                     <p className="line"></p>
@@ -29,12 +31,15 @@ const PopularDestinations = () => {
                             - Сопровождающий турлидер ; <br/>
                             - Бонусы компании
                     </div>
-                    <button className="destination_button">
-                        Подробнее
-                    </button>
+                    <Link to={TOURS_PAGE}>
+                        <button className="destination_button">
+                            Подробнее
+                        </button>
+                    </Link>
+
                 </div>
                 <div className="destination_card">
-                    <img className="destination_img" src={efes_card} alt="something gone wrong..."/>
+                    <img className="destination_img" src={Oae} alt="something gone wrong..."/>
                     <h4 className="destination_subtitle">
                         Наследие Турции «Великолепный Век»
                     </h4>
@@ -51,12 +56,14 @@ const PopularDestinations = () => {
                         - Переезды по программе; <br/>
                         - Медицинская страховка ;
                     </div>
-                    <button className="destination_button">
-                        Подробнее
-                    </button>
+                    <Link to={TOURS_PAGE}>
+                        <button className="destination_button">
+                            Подробнее
+                        </button>
+                    </Link>
                 </div>
                 <div className="destination_card">
-                    <img className="destination_img" src={tashkent_card} alt="something gone wrong..."/>
+                    <img className="destination_img" src={Uzb} alt="something gone wrong..."/>
                     <h4 className="destination_subtitle">
                         Тур в солнечный Ташкент
                     </h4>
@@ -72,9 +79,11 @@ const PopularDestinations = () => {
                         - Завтрак в отеле; <br/>
                         - Бонусы компании
                     </div>
-                    <button className="destination_button">
-                        Подробнее
-                    </button>
+                    <Link to={TOURS_PAGE}>
+                        <button className="destination_button">
+                            Подробнее
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

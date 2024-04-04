@@ -6,6 +6,7 @@ import ToursView from '../pages/tours/Tours.view.jsx';
 import TourDetailsView from "../components/tourDetails/TourDetails.view.jsx";
 import MainView from "../pages/main/Main.view.jsx";
 import AboutView from "../pages/about/About.view.jsx";
+import TourDetailsIntView from "../components/TourDetailsIntView/TourDetailsInt.view.jsx";
 
 const MainRoutes = () => {
     const PUBLIC_ROUTES = [
@@ -35,6 +36,7 @@ const MainRoutes = () => {
                             <Route path={link} element={element} key={id} />
                         ))}
                         <Route path="/tours/:id" element={<TourDetailsView />} />
+                        <Route path="/internal-tour-details/:id" element={<TourDetailsIntView />} />
                     </Route>
                 </Routes>
             </Router>

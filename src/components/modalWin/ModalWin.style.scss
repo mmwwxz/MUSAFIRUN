@@ -1,0 +1,128 @@
+.modal{
+  width: 100%;
+  height: auto;
+  transition: all;
+  transition-duration: .15s;
+  transition-property: all;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100000;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal_box{
+  background: #09E97B;
+  width: 100%;
+  height: 538px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    height: 450px;
+    gap: 50px;
+  }
+}
+
+.exit{
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  font-size: 50px;
+  width: 40px;
+  height: 40px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+}
+
+.modal-icons-container {
+  display: flex;
+  gap: 180px;
+  justify-content: center;
+
+  @media (max-width: 1024px) {
+    //flex-direction: column;
+    //align-items: center;
+    gap: 10px;
+  }
+}
+
+.modal-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  img {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      transform: scale(0.9);
+      box-shadow: none;
+    }
+  }
+}
+
+.modal-icon-img {
+  width: 120px;
+  height: 120px;
+
+  @media (max-width: 1024px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.modal-icon-text {
+  margin-top: 10px;
+  font-family: 'Inter',sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  @media (max-width: 1024px) {
+    font-size: 24px;
+  }
+}
+
+.rotate{
+  transform: rotate(180deg) translateY(-4px);
+}
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}

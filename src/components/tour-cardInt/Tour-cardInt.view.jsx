@@ -1,9 +1,9 @@
 import React from 'react';
-import './Tour-card.style.scss'
+import './Tour-cardInt.style.scss'
 import { Link } from 'react-router-dom';
-import {tourDetailsURL} from "../../utils/tourDetailsURL.js";
+import {tourIntDetailsURL} from '../../utils/tourDetailsURL';
 
-const TourCardView = ({ id, img, fireImg, alt, title, text, tourVariant }) => {
+const TourCardIntView = ({ id, img, fireImg, alt, title, text, tourVariant }) => {
     return (
         <div className="tourCard">
             <div className="tourImg">
@@ -17,11 +17,11 @@ const TourCardView = ({ id, img, fireImg, alt, title, text, tourVariant }) => {
             </div>
             <h2>{title}</h2>
             <p>{text}</p>
-            <Link to={tourDetailsURL(id)}>
+            <Link to={tourIntDetailsURL(id)}>
                 <button>Подробнее</button>
             </Link>
         </div>
     );
 };
 
-export default TourCardView;
+export default TourCardIntView;

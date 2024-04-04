@@ -5,6 +5,7 @@ import cardsInfo from "../../utils/CardsInfo.js"
 import cardsInfoInternational from "../../utils/CardsInfoInternational.js";
 import GreenSvg from "../../assets/svg.png";
 import FooterView from "../../layout/footer/Footer.view.jsx";
+import TourCardIntView from "../../components/tour-cardInt/Tour-cardInt.view.jsx";
 
 const cities = ['Бишкек', 'Ыссык-Көл', 'Талас', 'Джалал-Абад', 'Нарын', 'Ош', 'Баткен'];
 
@@ -13,6 +14,12 @@ const ToursView = () => {
 
     const handleClick = (filterValue) => {
         setSelectedFilter(filterValue);
+    };
+
+    const filteredCards = selectedFilter ? cardsInfo.filter(card => card.search === selectedFilter) : cardsInfo;
+
+    const handleShowAllTours = () => {
+        setSelectedFilter(null);
     };
 
     return (
@@ -26,10 +33,11 @@ const ToursView = () => {
                         {city}
                     </button>
                 ))}
+                <button className="btn" onClick={handleShowAllTours}>Показать все туры</button>
             </div>
 
             <div className="tour_cards">
-                {cardsInfo.map((card) => (
+                {filteredCards.map((card) => (
                     <TourCardView
                         key={card.id}
                         id={card.id}
@@ -48,16 +56,16 @@ const ToursView = () => {
                 </div>
                 <img src={GreenSvg} alt="" className="rotate"/>
                 <div className="tour__cards_int-box">
-                    {cardsInfoInternational.map((card) => (
-                        <TourCardView
-                            key={card.id}
-                            id={card.id}
-                            img={card.img}
-                            alt={card.alt}
-                            title={card.title}
-                            text={card.text}
-                            tourVariant={card.variant}
-                            fireImg={card.fireImg}
+                    {cardsInfoInternational.map((cardInt) => (
+                        <TourCardIntView
+                            key={cardInt.id}
+                            id={cardInt.id}
+                            img={cardInt.img}
+                            alt={cardInt.alt}
+                            title={cardInt.title}
+                            text={cardInt.text}
+                            tourVariant={cardInt.variant}
+                            fireImg={cardInt.fireImg}
                         />
                     ))}
                 </div>

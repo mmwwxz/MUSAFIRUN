@@ -1,5 +1,3 @@
-// VideoPlayer.jsx
-
 import React from 'react';
 import YouTube from 'react-youtube';
 import './VideoPlayer.style.scss';
@@ -8,7 +6,8 @@ import GreenSvg from "../../assets/svg.png";
 const VideoPlayer = ({ videoId }) => {
     const opts = {
         height: '565',
-        width: '1000',
+        maxWidth: '1000',
+        width: '100%',
         playerVars: {
             autoplay: 10,
         },
