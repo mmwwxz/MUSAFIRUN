@@ -23,19 +23,19 @@ const ModalWinView = ({ isOpen, onClose }) => {
                             <h2 className="modal-title">Для подробной информации, напишите нам  на мессенджер </h2>
                             <div className="modal-icons-container">
                                 <div className="modal-icon">
-                                    <Link to="https://wa.me/">
+                                    <Link to="https://wa.me/+996501252353">
                                         <img src={whatsapp} alt="" className="modal-icon-img"/>
                                     </Link>
                                     <p className="modal-icon-text">WhatsApp</p>
                                 </div>
                                 <div className="modal-icon">
-                                    <Link to="https://www.instagram.com/">
+                                    <Link to="https://www.instagram.com/musafirun.tour/">
                                         <img src={instagram} alt="" className="modal-icon-img"/>
                                     </Link>
                                     <p className="modal-icon-text">Instagram</p>
                                 </div>
                                 <div className="modal-icon">
-                                    <Link to="https://www.facebook.com/">
+                                    <Link to="https://www.facebook.com/people/Musafirun-Tour/pfbid0GaiiwJLNnivzpVXr5WP6R9urkTVrQB294aiX9R8Math8urHH5fA85bJbykkpws9Cl/?mibextid=LQQJ4d">
                                         <img src={facebook} alt="" className="modal-icon-img"/>
                                     </Link>
                                     <p className="modal-icon-text">Facebook</p>

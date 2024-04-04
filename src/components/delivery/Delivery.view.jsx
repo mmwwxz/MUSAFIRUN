@@ -5,6 +5,7 @@ import Kalpak2 from '../../assets/kalpak2.png';
 import Shoes from '../../assets/kazakhShoes.png';
 import Bags from '../../assets/kazakhBags.png';
 import WhatsappBtn from '../../assets/ButtonWhatsapp.svg'
+import {Link} from "react-router-dom";
 
 
 const DeliveryView = () => {
@@ -31,7 +32,9 @@ const DeliveryView = () => {
                         Наша компания так же осуществляет доставку сувенироов в отель. Если у вас нет времени чтобы пойти на базар или для похода по магазинам, просто отправьте сообщение со словом “Сувенир” на наш
                     </p>
                     <button>
-                        <img src={WhatsappBtn} alt=""/>
+                        <a href="https://wa.me/+996501252353">
+                            <img src={WhatsappBtn} alt=""/>
+                        </a>
                     </button>
                     <p>
                         Мы вышлем вам каталог с товарами, вы можете выбрать всё, что захотите. Мы оформим доставку в отель или другое удобное место для вас.

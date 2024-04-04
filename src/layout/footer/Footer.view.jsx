@@ -36,13 +36,13 @@ const FooterView = ({ greenBackground }) => {
                         <Link to="https://www.youtube.com/@MUSAFIRUN_TOUR">
                             <img src={Youtube} alt="Youtube" />
                         </Link>
-                        <Link to="https://wa.me/">
+                        <Link to="https://wa.me/+996501252353">
                             <img  src={Whatsapp} alt="Whatsapp" />
                         </Link>
                         <Link to="https://www.instagram.com/musafirun.tour/">
                             <img src={Instagram} alt="Instagram" />
                         </Link>
-                        <Link to="https://www.facebook.com/">
+                        <Link to="https://www.facebook.com/people/Musafirun-Tour/pfbid0GaiiwJLNnivzpVXr5WP6R9urkTVrQB294aiX9R8Math8urHH5fA85bJbykkpws9Cl/?mibextid=LQQJ4d">
                             <img src={Facebook} alt="Facebook" />
                         </Link>
                     </div>
