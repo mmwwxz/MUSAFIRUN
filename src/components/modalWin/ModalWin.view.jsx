@@ -5,8 +5,12 @@ import instagram from '../../assets/icons/whiteInsta.svg';
 import facebook from '../../assets/icons/whiteFacebook.svg';
 import GreenSvg from "../../assets/svg.png";
 import {Link} from "react-router-dom";
+import { useTranslation } from 'react-i18next'
 
 const ModalWinView = ({ isOpen, onClose }) => {
+    const { t } = useTranslation('translation', {
+        keyPrefix: 'modal',
+    })
     const closeModal = () => {
         onClose();
     };
@@ -20,7 +24,7 @@ const ModalWinView = ({ isOpen, onClose }) => {
                         <img style={{width: '100%'}} src={GreenSvg} alt="" className="rotate"/>
                         <div className="modal_box">
                             <div onClick={closeModal} className="exit">X</div>
-                            <h2 className="modal-title">Для подробной информации, напишите нам  на мессенджер </h2>
+                            <h2 className="modal-title">{t("title")}</h2>
                             <div className="modal-icons-container">
                                 <div className="modal-icon">
                                     <Link to="https://wa.me/+996501252353">

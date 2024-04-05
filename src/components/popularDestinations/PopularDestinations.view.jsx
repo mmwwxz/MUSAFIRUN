@@ -1,93 +1,106 @@
-import React from "react";
-import './PopularDestinations.style.scss';
-import Uzb from "../../assets/Uzbekistan.png";
-import Kaz from "../../assets/Kazahstan.webp";
-import Oae from "../../assets/OAE.jpg";
-import {Link} from "react-router-dom";
-import {TOURS_PAGE} from "../../utils/path.js";
-
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
+import Kaz from '../../assets/Kazahstan.webp'
+import Oae from '../../assets/OAE.jpg'
+import Uzb from '../../assets/Uzbekistan.png'
+import { TOURS_PAGE } from '../../utils/path.js'
+import './PopularDestinations.style.scss'
 
 const PopularDestinations = () => {
-    return (
-        <div className="destination">
-            <div className="destination_title">
-                <h2>Популярные направления</h2>
-            </div>
-            <div className="destination_wrapper">
-                <div className="destination_card">
-                    <img className="destination_img" src={Kaz} alt="something gone wrong..."/>
-                    <h4 className="destination_subtitle">
-                        Этот 7-дневный в Алматы
-                    </h4>
-                    <p className="destination_text">Маршрут тура: Бишкек - Алматы - Бишкек</p>
-                    <p className="line"></p>
-                    <div className="destination_list">
-                            В стоимость турпакета входит: <br/>
-                            - Транспорт Бишкек-Алматы-Бишкек; <br/>
-                            - Транспорт на протяжении всего тура; <br/>
-                            - Посещение всех локаций; <br/>
-                            - Подъем и спуск на панораму Кок-Тобе; <br/>
-                            - Входной билет в зоопарк; <br/>
-                            - Сопровождающий турлидер ; <br/>
-                            - Бонусы компании
-                    </div>
-                    <Link to={TOURS_PAGE}>
-                        <button className="destination_button">
-                            Подробнее
-                        </button>
-                    </Link>
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		})
+	}
+	const { t } = useTranslation('translation', {
+		keyPrefix: 'home.popular',
+	})
+	return (
+		<div className='destination'>
+			<div className='destination_title'>
+				<h2>{t('title')}</h2>
+			</div>
+			<div className='destination_wrapper'>
+				<div className='destination_card'>
+					<img
+						className='destination_img'
+						src={Kaz}
+						alt='something gone wrong...'
+					/>
+					<h4 className='destination_subtitle'>{t('items.item1.title')}</h4>
+					<p className='destination_text'>{t('items.item1.des')}</p>
+					<p className='line'></p>
+					<div className='destination_list'>
+						{t('items.item1.peculiarities.title')}:
+						<br />-{t('items.item1.peculiarities.i1')}
+						<br />-{t('items.item1.peculiarities.i2')}
+						<br />-{t('items.item1.peculiarities.i3')}
+						<br />-{t('items.item1.peculiarities.i4')}
+						<br />-{t('items.item1.peculiarities.i5')}
+						<br />
+						{t('items.item1.peculiarities.i6')}
+					</div>
+					<Link to={TOURS_PAGE} onClick={scrollToTop}>
+						<button className='destination_button'>
+							{t('items.item1.btn')}
+						</button>
+					</Link>
+				</div>
+				<div className='destination_card'>
+					<img
+						className='destination_img'
+						src={Oae}
+						alt='something gone wrong...'
+					/>
+					<h4 className='destination_subtitle'>{t('items.item2.title')}</h4>
+					<p className='destination_text'>{t('items.item2.des')}</p>
+					<p className='line'></p>
+					<div className='destination_list'>
+						{t('items.item2.peculiarities.title')}:
+						<br />-{t('items.item2.peculiarities.i1')}
+						<br />-{t('items.item2.peculiarities.i2')}
+						<br />-{t('items.item2.peculiarities.i3')}
+						<br />-{t('items.item2.peculiarities.i4')}
+						<br />-{t('items.item2.peculiarities.i5')}
+						<br />
+						{t('items.item2.peculiarities.i6')}
+					</div>
+					<Link to={TOURS_PAGE} onClick={scrollToTop}>
+						<button className='destination_button'>
+							{t('items.item2.btn')}
+						</button>
+					</Link>
+				</div>
+				<div className='destination_card'>
+					<img
+						className='destination_img'
+						src={Uzb}
+						alt='something gone wrong...'
+					/>
+					<h4 className='destination_subtitle'>{t('items.item3.title')}</h4>
+					<p className='destination_text'>{t('items.item3.des')}</p>
+					<p className='line'></p>
+					<div className='destination_list'>
+						{t('items.item2.peculiarities.title')}:
+						<br />-{t('items.item3.peculiarities.i1')}
+						<br />-{t('items.item3.peculiarities.i2')}
+						<br />-{t('items.item3.peculiarities.i3')}
+						<br />-{t('items.item3.peculiarities.i4')}
+						<br />-{t('items.item3.peculiarities.i5')}
+						<br />-{t('items.item3.peculiarities.i6')}
+						<br />-{t('items.item3.peculiarities.i7')}
+					</div>
+					<Link to={TOURS_PAGE} onClick={scrollToTop}>
+						<button className='destination_button'>
+							{t('items.item3.btn')}
+						</button>
+					</Link>
+				</div>
+			</div>
+		</div>
+	)
+}
 
-                </div>
-                <div className="destination_card">
-                    <img className="destination_img" src={Oae} alt="something gone wrong..."/>
-                    <h4 className="destination_subtitle">
-                        Наследие Турции «Великолепный Век»
-                    </h4>
-                    <p className="destination_text">Маршрут тура: Стамбул – Чанаккале – Троя –
-                        Эфэс – Кушадасы – Денизли – Памуккале –
-                        Анталья.</p>
-                    <p className="line"></p>
-                    <div className="destination_list">
-                        В стоимость турпакета входит: <br/>
-                        - Авиаперелёты; <br/>
-                        - Проживание в отелях 4* и 5*; <br/>
-                        - Питание на базе завтрака <br/>
-                        - Сопровождение гида; <br/>
-                        - Переезды по программе; <br/>
-                        - Медицинская страховка ;
-                    </div>
-                    <Link to={TOURS_PAGE}>
-                        <button className="destination_button">
-                            Подробнее
-                        </button>
-                    </Link>
-                </div>
-                <div className="destination_card">
-                    <img className="destination_img" src={Uzb} alt="something gone wrong..."/>
-                    <h4 className="destination_subtitle">
-                        Тур в солнечный Ташкент
-                    </h4>
-                    <p className="destination_text">Маршрут тура: Бишкек-Ташкент-Бишкек;</p>
-                    <p className="line"></p>
-                    <div className="destination_list">
-                        В стоимость турпакета входит: <br/>
-                        - Транспорт Бишкек-Ташкент-Бишкек; <br/>
-                        - Транспорт по Ташкенту 2 дня; <br/>
-                        - Сопровождающий турлидер ; <br/>
-                        - Профессиональный местный гид в Ташкенте; <br/>
-                        - Проживание в отеле; <br/>
-                        - Завтрак в отеле; <br/>
-                        - Бонусы компании
-                    </div>
-                    <Link to={TOURS_PAGE}>
-                        <button className="destination_button">
-                            Подробнее
-                        </button>
-                    </Link>
-                </div>
-            </div>
-        </div>
-    );
-};
-
-export default PopularDestinations;
+export default PopularDestinations

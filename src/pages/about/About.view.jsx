@@ -4,6 +4,8 @@ import VideoPlayer from "../../components/videoPlayer/VideoPlayer.view";
 import GreenSvg from "../../assets/svg.png";
 import FooterView from "../../layout/footer/Footer.view.jsx";
 import VideoPlayerPhone from "../../components/videoPlayerPhone/VideoPlayerPhone.view";
+import { useTranslation } from 'react-i18next'
+
 
 
 const AboutView = () => {
@@ -18,7 +20,9 @@ const AboutView = () => {
     }, []);
 
     const videoId = 'SwVu0By1Zuc';
-
+	const { t } = useTranslation('translation', {
+		keyPrefix: 'about',
+	})
 
     return (
         <>
@@ -32,17 +36,17 @@ const AboutView = () => {
                 </div>
                 <div className="about_blog">
                     <div style={{ marginTop: 0 }} className="about__title">
-                        <h2>Немного о нас</h2>
+                        <h2>{t("title")}</h2>
                     </div>
                     <ul>
                         <li className="about_blog__text">
-                            Компания Мусафирун Трэвел это полностью лицензированная туристическая компания, располагающаяся в столице Кыргызской Республики — городе Бишкек.
+                            {t("text1")}
                         </li>
                         <li className="about_blog__text">
-                            Мы работаем на туристическом рынке Кыргызстана с 2018 года и уже не раз завоевывали награду лучшего тур оператора в стране.
+                            {t("text2")}
                         </li>
                         <li className="about_blog__text">
-                            Фактически, то, что Кыргызстан предлагает сегодняшнему любознательному туристу, представляет собой сочетание разных вещей: кочевой образ жизни, захватывающие дух пейзажи, великолепную природу, древние памятники, вкусные блюда и знаменитое гостеприимство народов Центральной Азии. Мы объединили все это в наших тщательно проработанных  программах, которые, как мы надеемся, будут и дальше привлекать туристов в это нетронутое «массовым туризмом» место.
+                            {t("text3")}
                         </li>
                     </ul>
                 </div>

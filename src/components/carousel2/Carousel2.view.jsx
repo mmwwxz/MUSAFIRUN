@@ -1,13 +1,14 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import i18n from 'i18next'
+import { useEffect, useState } from "react"
+import SwiperCore from "swiper"
+import "swiper/css"
+import "swiper/css/effect-coverflow"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import { EffectCoverflow, Keyboard, Navigation, Pagination } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
+import stars from "../../assets/stars.png"
 import "./Carousel2.style.jsx.scss"
-import stars from "../../assets/stars.png";
-import {EffectCoverflow, Keyboard, Navigation, Pagination} from "swiper/modules";
-import {useEffect, useState} from "react";
 
 SwiperCore.use([EffectCoverflow, Keyboard, Navigation, Pagination]);
 
@@ -52,7 +53,7 @@ const CardSlider = ({ items }) => {
                             <h2>{item.name}</h2>
                             <img className='stars' src={stars} alt="Stars" />
                             <p>{item.content}</p>
-                            <button>Подробнее</button>
+                            <button>{i18n.language==="en"?"More details":"Подробнее"}</button>
                         </div>
                     </SwiperSlide>
                 ))}

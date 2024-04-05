@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {ABOUT_PAGE, MAIN_PAGE, TOURS_PAGE} from '../../utils/path.js';
 import logo from '../../assets/icons/logo.svg';
+import darkLogo from '../../assets/icons/header_logo.svg'
 import './Footer.style.scss';
 import Phone from '../../assets/icons/Phone.svg';
 import Whatsapp from '../../assets/icons/Whatsapp.svg';
@@ -9,6 +10,8 @@ import Instagram from '../../assets/icons/instLogo.svg';
 import Youtube from '../../assets/icons/Yootube.svg';
 import Facebook from '../../assets/icons/Facebook.svg';
 import ModalWinView from "../../components/modalWin/ModalWin.view.jsx";
+import { useTranslation } from 'react-i18next'
+
 
 const FooterView = ({ greenBackground }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,6 +23,16 @@ const FooterView = ({ greenBackground }) => {
     const closeModal = () => {
         setIsModalOpen(false);
     };
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+    const { t } = useTranslation('translation', {
+		keyPrefix: 'footer',
+	})
 
     return (
         <div className={`footerBox ${greenBackground ? 'green-bg' : ''}`}>
@@ -49,27 +62,26 @@ const FooterView = ({ greenBackground }) => {
                 </div>
                 <div className="footerAbout">
                     <div className="footerAddress">
-                        <h2>Адрес</h2>
+                        <h2>{t("item1.title")}</h2>
                         <p>
-                            БЦ Maximum Турусбекова 109/1 5 этаж, 510 кабинет
+                            {t("item1.text")}
                         </p>
                     </div>
                     <div className="footerPhone">
-                        <h2>Телефон</h2>
+                        <h2>{t("item2.title")}</h2>
                         <p>+996 501 252 353</p>
-                        <p>+996 501 252 353</p>
-                        <p>+996 501 252 353</p>
+                        <p>+996 535 975 931</p>
                     </div>
                     <div className="footerNavigation">
-                        <h2>Навигация</h2>
+                        <h2>{t("item3.title")}</h2>
                         <p>
-                            <Link to={MAIN_PAGE}>Главная</Link>
+                            <Link to={MAIN_PAGE} onClick={scrollToTop}>{t("item3.i1")}</Link>
                         </p>
                         <p>
-                            <Link to={TOURS_PAGE}>Туры</Link>
+                            <Link to={TOURS_PAGE} onClick={scrollToTop}>{t("item3.i2")}</Link>
                         </p>
                         <p>
-                            <Link to={ABOUT_PAGE}>О нас</Link>
+                            <Link to={ABOUT_PAGE} onClick={scrollToTop}>{t("item3.i3")}</Link>
                         </p>
                     </div>
                 </div>
@@ -79,9 +91,10 @@ const FooterView = ({ greenBackground }) => {
 
             <div className="footerWrapper">
                 <Link to={MAIN_PAGE}>
-                    <img src={logo} alt="something gone wrong..." />
+                    {/*<img src={logo} className="logo dark-logo" alt="something gone wrong..." />*/}
+                    <img src={darkLogo} alt="Dark Logo" className="logo dark-logo"/>
                 </Link>
-                <p>Все права защищены © MUSAFIRUN developed by CRYNOX</p>
+                <p>{t("rights")}</p>
                 <button onClick={openModal} className="phoneBtn">
                     <img src={Phone} alt="" /> Связаться
                 </button>
