@@ -112,7 +112,7 @@
     border-radius: 25px;
     background: #00AF59;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 40px;
 
@@ -142,7 +142,7 @@
       flex-direction: column;
       &-title {
         display: flex;
-        flex-direction: column;
+        gap: 15px;
         font-family: 'Poppins', sans-serif;
         font-size: 64px;
         line-height: 96px;
@@ -150,7 +150,7 @@
         color: #FFFFFF;
         position: relative;
         max-width: 570px;
-        height: 192px;
+        height: 150px;
 
         @media (max-width: 768px) {
           font-size: 32px;

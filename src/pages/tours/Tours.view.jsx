@@ -6,7 +6,10 @@ import TourCardView from '../../components/tour-card/Tour-card.view.jsx'
 import TourCardIntView from '../../components/tour-cardInt/Tour-cardInt.view.jsx'
 import FooterView from '../../layout/footer/Footer.view.jsx'
 import { cardsInfo, cardsInfoEn } from '../../utils/CardsInfo.js'
-import cardsInfoInternational from '../../utils/CardsInfoInternational.js'
+import {
+	cardsInfoInternational,
+	cardsInfoInternationalEn,
+} from '../../utils/CardsInfoInternational.js'
 import './Tours.style.scss'
 const cities = [
 	'Бишкек',
@@ -56,17 +59,21 @@ const ToursView = () => {
 				<h2>{t('title1')}</h2>
 			</div>
 			<div className='tours_cities'>
-				{i18n.language === 'en'
-					? citiesEN.map(city => (
+				{
+					i18n.language === 'en' ?
+						citiesEN.map(city => (
 							<button key={city} onClick={() => handleClick(city)}>
 								{city}
 							</button>
+							// eslint-disable-next-line no-mixed-spaces-and-tabs
 					  ))
 					: cities.map(city => (
 							<button key={city} onClick={() => handleClick(city)}>
 								{city}
 							</button>
-					  ))}
+							// eslint-disable-next-line no-mixed-spaces-and-tabs
+					  ))
+				}
 				<button className='btn' onClick={handleShowAllTours}>
 					{t('btn')}
 				</button>
@@ -97,18 +104,31 @@ const ToursView = () => {
 					className='rotate'
 				/>
 				<div className='tour__cards_int-box'>
-					{cardsInfoInternational.map(cardInt => (
-						<TourCardIntView
-							key={cardInt.id}
-							id={cardInt.id}
-							img={cardInt.img}
-							alt={cardInt.alt}
-							title={cardInt.title}
-							text={cardInt.text}
-							tourVariant={cardInt.variant}
-							fireImg={cardInt.fireImg}
-						/>
-					))}
+					{i18n.language === 'en' ?
+						cardsInfoInternationalEn?.map(cardInt => (
+								<TourCardIntView
+									key={cardInt.id}
+									id={cardInt.id}
+									img={cardInt.img}
+									alt={cardInt.alt}
+									title={cardInt.title}
+									text={cardInt.text}
+									tourVariant={cardInt.variant}
+									fireImg={cardInt.fireImg}
+								/>
+						  ))
+						: cardsInfoInternational?.map(cardInt => (
+								<TourCardIntView
+									key={cardInt.id}
+									id={cardInt.id}
+									img={cardInt.img}
+									alt={cardInt.alt}
+									title={cardInt.title}
+									text={cardInt.text}
+									tourVariant={cardInt.variant}
+									fireImg={cardInt.fireImg}
+								/>
+						  ))}
 				</div>
 				<img src={GreenSvg} style={{ width: '100%' }} alt='' />
 			</div>

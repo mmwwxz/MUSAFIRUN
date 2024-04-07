@@ -1,23 +1,19 @@
 import i18n from 'i18next'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import { tourIntDetailsURL } from '../../utils/tourDetailsURL'
 import './Tour-cardInt.style.scss'
 
-const TourCardIntView = ({
-	id,
-	img,
-	fireImg,
-	alt,
-	title,
-	text,
-	tourVariant,
-}) => {
-	const scrollToTop = () => {
+const TourCardIntView = ({id,img, alt, title, text, tourVariant, fireImg}) => {
+
+
+	const navigate = useNavigate()
+	const scrollToTop = (id) => {
 		window.scrollTo({
 			top: 0,
 			behavior: 'smooth',
 		})
+		navigate(`/internal-tour-details/${id}`)
 	}
 
 	return (
@@ -31,9 +27,9 @@ const TourCardIntView = ({
 			</div>
 			<h2>{title}</h2>
 			<p>{text}</p>
-			<Link onClick={scrollToTop} to={tourIntDetailsURL(id)}>
+			<div onClick={() => scrollToTop(id)} >
 				<button>{i18n.language === 'en' ? 'More details' : 'Подробнее'}</button>
-			</Link>
+			</div>
 		</div>
 	)
 }
