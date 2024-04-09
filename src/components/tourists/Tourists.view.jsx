@@ -1,7 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Guest1 from '../../assets/guest1.png'
-import Guest10 from '../../assets/guest10.png'
 import Guest2 from '../../assets/guest2.png'
 import Guest3 from '../../assets/guest3.png'
 import Guest4 from '../../assets/guest4.png'
@@ -9,6 +8,7 @@ import Guest5 from '../../assets/guest5.png'
 import Guest7 from '../../assets/guest7.png'
 import Guest8 from '../../assets/guest8.png'
 import Guest9 from '../../assets/guest9.png'
+import Guest10 from '../../assets/guest10.png'
 import './Tourists.style.scss'
 
 const TouristsView = () => {
@@ -29,7 +29,7 @@ const TouristsView = () => {
 				<img className='images' src={Guest7} alt='something gone wrong!' />
 				<img className='images' src={Guest8} alt='something gone wrong!' />
 				<img className='images' src={Guest9} alt='something gone wrong!' />
-				<img className='long_image' src={Guest10} alt='something gone wrong!' />
+				{/*<img className='long_image' src={Guest10} alt='something gone wrong!' />*/}
 			</div>
 		</div>
 	)

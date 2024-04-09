@@ -1,181 +1,182 @@
 {
-	"header": {
-		"link1": "Home",
-		"link2": "Tours",
-		"link3": "About Us",
-		"btn": "Contact"
-	},
-	"home": {
-		"banner": {
-			"text": "Travel with us",
-			"btn": "More details"
-		},
-		"advantages": {
-			"title": "Our advantages",
-			"items": {
-				"item1": "High level of service Best match between price and quality of tours",
-				"item2": "Free consultation Free booking Confidentiality guarantee",
-				"item3": "Convenient payment systems Online and offline purchase of air tickets",
-				"item4": "Health insurance"
-			}
-		},
-		"popular": {
-			"title": "Popular destinations",
-			"items": {
-				"item1": {
-					"title": "This 7 day in Almaty",
-					"des": "Tour route: Bishkek - Almaty - Bishkek",
-					"peculiarities": {
-						"title": "The price of the tour package includes",
-						"i1": "Transport throughout the tour;",
-						"i2": "Visiting all locations;",
-						"i3": "Ascent and descent to the Kok-Tobe panorama;",
-						"i4": "Entrance ticket to the zoo;",
-						"i5": "Accompanying tour leader;",
-						"i6": "Company bonuses"
-					},
-					"btn": "More details"
-				},
-				"item2": {
-					"title": "Heritage of Turkey «Magnificent Century» ",
-					"des": "Tour route: Istanbul – Canakkale – Troy – Ephesus – Kusadasi – Denizli – Pamukkale – Antalya.",
-					"peculiarities": {
-						"title": "The price of the tour package includes",
-						"i1": "Air travel;",
-						"i2": "Accommodation in 4* and 5* hotels;",
-						"i3": "Meals based on breakfast",
-						"i4": "Guide accompaniment;",
-						"i5": "Transfers according to the program;",
-						"i6": "Medical insurance ;"
-					},
-					"btn": "More details"
-				},
-				"item3": {
-					"title": "Tour to sunny Tashkent",
-					"des": "Tour route: Bishkek-Tashkent-Bishkek;",
-					"peculiarities": {
-						"title": "The price of the tour package includes",
-						"i1": "Transport Bishkek-Tashkent-Bishkek;",
-						"i2": "Transport around Tashkent 2 days;",
-						"i3": "Accompanying tour leader;",
-						"i4": "Professional local guide in Tashkent;",
-						"i5": "Hotel accommodation;",
-						"i6": "Breakfast in the hotel;",
-						"i7": "Company bonuses"
-					},
-					"btn": "More details"
-				}
-			}
-		},
-		"last_minute_tours": {
-			"title": "Last minute tours",
-			"items": {
-				"item1": {
-					"title": "Tour to Dubai",
-					"des": "Tour route: Bishkek - Dubai - Bishkek",
-					"peculiarities": {
-						"title": "The price of the tour package includes",
-						"i1": "Transport Bishkek-Dubai-Bishkek",
-						"i2": "Transport throughout the tour;",
-						"i3": "Visiting all locations;",
-						"i4": "Hotel accommodation;",
-						"i5": "Breakfast in the hotel;",
-						"i6": "Accompanying tour leader;",
-						"i7": "Company bonuses"
-					},
-					"btn": "More details"
-				},
-				"item2": {
-					"title": "Heritage of Turkey «Istanbul 2n. – Antalya 5n.»",
-					"des": "Tour route: Istanbul - Antalya.",
-					"peculiarities": {
-						"title": "The price of the tour package includes",
-						"i1": "Air travel;",
-						"i2": "Transfer airport – hotel – airport;",
-						"i3": "Meals in Istanbul using the HB system;",
-						"i4": "Food in Antalya using the AI ​​system;",
-						"i5": "Guide accompaniment;",
-						"i6": "Transfers according to the program;",
-						"i7": "Medical insurance ;"
-					},
-					"btn": "More details"
-				},
-				"item3": {
-					"title": "Tour to Dubai",
-					"des": "Tour route: Bishkek - Dubai - Bishkek",
-					"peculiarities": {
-						"title": "The price of the tour package includes",
-						"i1": "Transport Bishkek-Dubai-Bishkek",
-						"i2": "Transport throughout the tour;",
-						"i3": "Visiting all locations;",
-						"i4": "Hotel accommodation;",
-						"i5": "Breakfast in the hotel;",
-						"i6": "Accompanying tour leader;",
-						"i7": "Company bonuses"
-					},
-					"btn": "More details"
-				},
-				"item4": {
-					"title": "Heritage of Turkey «Istanbul 2n. – Antalya 5n.»",
-					"des": "Tour route: Istanbul - Antalya.",
-					"peculiarities": {
-						"title": "The price of the tour package includes",
-						"i1": "Air travel;",
-						"i2": "Transfer airport – hotel – airport;",
-						"i3": "Meals in Istanbul using the HB system;",
-						"i4": "Food in Antalya using the AI ​​system;",
-						"i5": "Guide accompaniment;",
-						"i6": "Transfers according to the program;",
-						"i7": "Medical insurance ;"
-					},
-					"btn": "More details"
-				}
-			},
-			"All": "All tours"
-		},
-		"delivery": {
-			"title": "Souvenir delivery",
-			"text1": "Our company also delivers souvenirs to the hotel. If you don't have time to go to the market or to go shopping, just send a message with the word “Souvenir” to our",
-			"text2": "Our company also delivers souvenirs to the hotel. If you don't have time to go to the market or to go shopping, just send a message with the word “Souvenir” to our"
-		},
-		"tourists": {
-			"title": "Our tourists"
-		},
-		"reviews": {
-			"title": "Customer Reviews"
-		}
-	},
-	"toursView": {
-		"title1": "Choose your tour",
-		"title2": "Tours to other countries",
-		"btn": "Show all tours"
-	},
-	"about": {
-		"title": "A little about us",
-		"text1": "Musafirun Travel Company is a fully licensed travel company located in the capital of the Kyrgyz Republic - Bishkek.",
-		"text2": "We have been working in the tourism market of Kyrgyzstan since 2018 and have repeatedly won the award for the best tour operator in the country.",
-		"text3": "In fact, what Kyrgyzstan offers to today's inquisitive tourist is a combination of different things: a nomadic lifestyle, breathtaking landscapes, magnificent nature, ancient monuments, delicious dishes and the famous hospitality of the people of Central Asia. We have put it all together in our carefully crafted programs that we hope will continue to attract tourists to this untouched «mass tourism» destination."
-	},
-	"modal": {
-		"title": "For detailed information, write to us on messenger"
-	},
-	"tourDetails": {
-		"book": "Book"
-	},
-	"footer": {
-		"item1": {
-			"title": "Address",
-			"text": "Zhusup Abdrakhmanova 191 Hayat Hotel 1st floor 133 room"
-		},
-		"item2": {
-			"title": "Telephone"
-		},
-		"item3": {
-			"title": "Navigation",
-			"i1": "Home",
-			"i2": "Tours",
-			"i3": "About Us"
-		},
-		"rights": "All rights reserved © MUSAFIRUN developed by CRYNOX"
-	}
+    "header": {
+        "link1": "Home",
+        "link2": "Tours",
+        "link3": "About Us",
+        "btn": "Contact"
+    },
+
+    "home": {
+        "banner": {
+            "text": "Travel with Us",
+            "btn": "Learn More"
+        },
+        "advantages": {
+            "title": "Our Advantages",
+            "items": {
+                "item1": "High level of service Best price-quality ratio for tours",
+                "item2": "Free consultation Free booking Confidentiality guarantee",
+                "item3": "Convenient payment systems Online and offline flight ticket purchase",
+                "item4": "Medical insurance"
+            }
+        },
+        "popular": {
+            "title": "Popular Destinations",
+            "items": {
+                "item1": {
+                    "title": "This 7-day tour to Almaty",
+                    "des": "Tour route: Bishkek - Almaty - Bishkek",
+                    "peculiarities": {
+                        "title": "Included in the tour package",
+                        "i1": "Transportation throughout the tour;",
+                        "i2": "Visiting all locations;",
+                        "i3": "Ascent and descent to Kok-Tobe panorama;",
+                        "i4": "Zoo entrance ticket;",
+                        "i5": "Accompanying tour leader;",
+                        "i6": "Company bonuses"
+                    },
+                    "btn": "More details"
+                },
+                "item2": {
+                    "title": "Turkey Heritage 'Magnificent Century'",
+                    "des": "Tour route: Istanbul – Canakkale – Troy – Ephesus – Kusadasi – Denizli – Pamukkale – Antalya.",
+                    "peculiarities": {
+                        "title": "Included in the tour package",
+                        "i1": "Flights;",
+                        "i2": "Accommodation in 4* and 5* hotels;",
+                        "i3": "Breakfast-based meals",
+                        "i4": "Guide accompaniment;",
+                        "i5": "Transfers as per itinerary;",
+                        "i6": "Medical insurance;"
+                    },
+                    "btn": "More details"
+                },
+                "item3": {
+                    "title": "Tour to Sunny Tashkent",
+                    "des": "Tour route: Bishkek-Tashkent-Bishkek;",
+                    "peculiarities": {
+                        "title": "Included in the tour package",
+                        "i1": "Transport Bishkek-Tashkent-Bishkek;",
+                        "i2": "Transport in Tashkent for 2 days;",
+                        "i3": "Accompanying tour leader;",
+                        "i4": "Professional local guide in Tashkent;",
+                        "i5": "Hotel accommodation;",
+                        "i6": "Breakfast at the hotel;",
+                        "i7": "Company bonuses"
+                    },
+                    "btn": "More details"
+                }
+            }
+        },
+        "last_minute_tours": {
+            "title": "Last Minute Tours",
+            "items": {
+                "item1": {
+                    "title": "Dubai Tour",
+                    "des": "Tour route: Bishkek - Dubai - Bishkek",
+                    "peculiarities": {
+                        "title": "Included in the tour package",
+                        "i1": "Flights;",
+                        "i2": "Transport throughout the tour;",
+                        "i3": "Visiting all locations;",
+                        "i4": "Hotel accommodation;",
+                        "i5": "Breakfast at the hotel;",
+                        "i6": "Accompanying tour leader;",
+                        "i7": "Company bonuses"
+                    },
+                    "btn": "More details"
+                },
+                "item2": {
+                    "title": "Tour to Uzbekistan",
+                    "des": "Tour route: Istanbul – Antalya.",
+                    "peculiarities": {
+                        "title": "Included in the tour package",
+                        "i1": "Flights;",
+                        "i2": "Airport-hotel-airport transfer;",
+                        "i3": "Half board in Istanbul;",
+                        "i4": "All inclusive in Antalya;",
+                        "i5": "Guide accompaniment;",
+                        "i6": "Transfers as per itinerary;",
+                        "i7": "Medical insurance;"
+                    },
+                    "btn": "More details"
+                },
+                "item3": {
+                    "title": "Turkey Heritage 'Istanbul 2n. – Antalya 5n.'",
+                    "des": "Tour route: Istanbul – Antalya.",
+                    "peculiarities": {
+                        "title": "Included in the tour package",
+                        "i1": "Flights;",
+                        "i2": "Airport-hotel-airport transfer;",
+                        "i3": "Half board in Istanbul;",
+                        "i4": "All inclusive in Antalya;",
+                        "i5": "Guide accompaniment;",
+                        "i6": "Transfers as per itinerary;",
+                        "i7": "Medical insurance;"
+                    },
+                    "btn": "More details"
+                },
+                "item4": {
+                    "title": "Tour to Kazakhstan",
+                    "des": "Tour route: Bishkek - Kazakhstan - Bishkek",
+                    "peculiarities": {
+                        "title": "Included in the tour package",
+                        "i1": "Transport Bishkek-Kazakhstan-Bishkek",
+                        "i2": "Transport throughout the tour;",
+                        "i3": "Visiting all locations;",
+                        "i4": "Hotel accommodation;",
+                        "i5": "Breakfast at the hotel;",
+                        "i6": "Accompanying tour leader;",
+                        "i7": "Company bonuses"
+                    },
+                    "btn": "More details"
+                }
+            },
+            "All": "All Tours"
+        },
+        "delivery": {
+            "title": "Souvenir Delivery",
+            "text1": "Our company also provides souvenir delivery to the hotel. If you don't have time to go to the bazaar or shop hopping, just send a message with the word 'Souvenir' to our",
+            "text2": "Our company also provides souvenir delivery to the hotel. If you don't have time to go to the bazaar or shop hopping, just send a message with the word 'Souvenir' to our"
+        },
+        "tourists": {
+            "title": "Our Tourists"
+        },
+        "reviews": {
+            "title": "Customer Reviews"
+        }
+    },
+    "toursView": {
+        "title1": "Choose Your Tour",
+        "title2": "Tours to Other Countries",
+        "btn": "All Tours"
+    },
+    "about": {
+        "title": "A Little About Us",
+        "text1": "Musafirun Travel Company is a fully licensed tour operator located in the capital of the Kyrgyz Republic - Bishkek.",
+        "text2": "We have been operating in the tourism market of Kyrgyzstan since 2018 and have repeatedly won the award for the best tour operator in the country.",
+        "text3": "In fact, what Kyrgyzstan offers to today's curious tourist is a combination of different things: a nomadic way of life, breathtaking landscapes, magnificent nature, ancient monuments, delicious food, and the famous hospitality of the peoples of Central Asia. We have combined all of this in our carefully crafted programs, which, we hope, will continue to attract tourists to this untouched place."
+    },
+    "modal": {
+        "title": "For detailed information, message us on messenger"
+    },
+    "tourDetails": {
+        "book": "Book"
+    },
+    "footer": {
+        "item1": {
+            "title": "Address",
+            "text": "Zhussup Abdurakhmanova 191 Hayat Hotel 1st floor 133 office"
+        },
+        "item2": {
+            "title": "Phone"
+        },
+        "item3": {
+            "title": "Navigation",
+            "i1": "Home",
+            "i2": "Tours",
+            "i3": "About Us"
+        },
+        "rights": "All rights reserved © MUSAFIRUN developed by CRYNOX"
+    }
 }

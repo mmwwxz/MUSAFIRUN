@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import Kaz from '../../assets/Kazahstan.webp'
-import Oae from '../../assets/OAE.jpg'
 import Dubay from '../../assets/dubay.png'
 import Stambul from '../../assets/stambul-card.png'
+import Uzb from '../../assets/Uzbekistan.png'
 import { TOURS_PAGE } from '../../utils/path.js'
 import ModalWinView from '../modalWin/ModalWin.view.jsx'
 
@@ -66,7 +66,7 @@ const HotDeals = () => {
 					<div className='deals_card'>
 						<img
 							className='deals_img'
-							src={Oae}
+							src={Uzb}
 							alt='something gone wrong...'
 						/>
 						<h4 className='deals_subtitle'>{t('items.item2.title')}</h4>
