@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import Kaz from '../../assets/Kazahstan.webp'
-import Oae from '../../assets/OAE.jpg'
+import Stambul from '../../assets/stambul-card.png'
 import Uzb from '../../assets/Uzbekistan.png'
 import { TOURS_PAGE } from '../../utils/path.js'
 import './PopularDestinations.style.scss'
@@ -51,7 +51,7 @@ const PopularDestinations = () => {
 				<div className='destination_card'>
 					<img
 						className='destination_img'
-						src={Oae}
+						src={Stambul}
 						alt='something gone wrong...'
 					/>
 					<h4 className='destination_subtitle'>{t('items.item2.title')}</h4>
